@@ -1,0 +1,61 @@
+class Car:
+    def __init__(self, make, model, year, mileage):
+        self.__make = make
+        self.__model = model
+        self.__year = year
+        self.__mileage = mileage
+
+    # Getter methods
+    def get_make(self):
+        return self.__make
+
+    def get_model(self):
+        return self.__model
+
+    def get_year(self):
+        return self.__year
+
+    def get_mileage(self):
+        return self.__mileage
+
+    # Setter methods
+    def set_make(self, make):
+        self.__make = make
+
+    def set_model(self, model):
+        self.__model = model
+
+    def set_year(self, year):
+        self.__year = year
+
+    def set_mileage(self, mileage):
+        self.__mileage = mileage
+
+
+def main():
+    # Create a Car object
+    car = Car("Toyota", "Camry", 2022, 15000)
+
+    # Display initial attribute values
+    print("Initial Car Details:")
+    print(f"Make: {car.get_make()}")
+    print(f"Model: {car.get_model()}")
+    print(f"Year: {car.get_year()}")
+    print(f"Mileage: {car.get_mileage()} km")
+
+    # Modify the attribute values
+    car.set_make("Honda")
+    car.set_model("Civic")
+    car.set_year(2023)
+    car.set_mileage(18000)
+
+    # Display modified attribute values
+    print("\nModified Car Details:")
+    print(f"Make: {car.get_make()}")
+    print(f"Model: {car.get_model()}")
+    print(f"Year: {car.get_year()}")
+    print(f"Mileage: {car.get_mileage()} km")
+
+
+if __name__ == "__main__":
+    main()
